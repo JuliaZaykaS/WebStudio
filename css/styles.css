@@ -19,56 +19,82 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .list {
   list-style: none;
 }
-
+.link {
+  text-decoration: none;
+}
 /* Site nav */
 
 .logo {
   color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .logo-path {
   color: var(--accent-color);
 }
 
-.site-nav .link {
+.list .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+
+.list .link:hover,
+.list .link:focus {
   color: var(--accent-color);
 }
 
-.connection.link {
+/*.connection.link {
   color: var(--title-text-color);
-}
+}*/
 
-.connection.link:hover,
+/*.connection.link:hover,
 .connection.link:focus {
   color: var(--accent-color);
-}
+}*/
 
 /*Девиз*/
 
 .slogan {
   background-color: var(--background);
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .slogan-title {
   color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
 }
 
 .button-primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
 }
 
 .titles {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
 }
 /*Преимущества*/
 
@@ -78,6 +104,15 @@ body {
 
 .advantages-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /*Услуги*/
@@ -93,11 +128,19 @@ body {
 
 .team-member {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
-/*.team-specialization {
+.team-specialization {
   color: var(--primary-text-color);
-}*/
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
 
 /*Футер*/
 .footer {
@@ -106,8 +149,13 @@ body {
 
 .address {
   color: var(--primary-white-color);
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .connection {
   color: var(--footer-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
