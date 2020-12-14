@@ -17,8 +17,8 @@
 }
 
 body {
-  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -53,6 +53,10 @@ body {
 
 .list .link:hover,
 .list .link:focus {
+  color: var(--accent-color);
+}
+
+.list .link.current {
   color: var(--accent-color);
 }
 
@@ -96,6 +100,7 @@ body {
   line-height: 1.67;
   text-align: center;
 }
+
 /*Преимущества*/
 
 .advantages {
@@ -147,8 +152,13 @@ body {
   background-color: var(--background);
 }
 
+.footer .logo {
+  color: var(--primary-white-color);
+}
+
 .address {
   color: var(--primary-white-color);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -158,4 +168,41 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+/* Портфолио */
+
+/* Фильтр */
+
+.filter-button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+  border: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Проекты */
+.progects {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.progects-titles {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
