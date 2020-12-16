@@ -29,6 +29,7 @@ body {
 .link {
   text-decoration: none;
 }
+
 /* Site nav */
 
 .logo {
@@ -52,13 +53,14 @@ body {
 }
 
 .list .link:hover,
-.list .link:focus {
-  color: var(--accent-color);
-}
-
+.list .link:focus,
 .list .link.current {
   color: var(--accent-color);
 }
+
+/* .list .link.current {
+  color: var(--accent-color);
+} */
 
 /*.connection.link {
   color: var(--title-text-color);
