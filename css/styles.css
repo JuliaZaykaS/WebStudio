@@ -1,5 +1,6 @@
 /* === Общие === */
 :root {
+  /* Палитра */
   --color-grey: #757575;
   --color-black: #212121;
   --color-blue: #2196f3;
@@ -7,7 +8,9 @@
   --color-transparent-grey: rgba(255, 255, 255, 0.6);
   --color-light-black: #2f303a;
   --color-light-grey: #f5f4fa;
+  --color-almost-white: #e5e5e5;
 
+  /* Переменные */
   --main-text-color: var(--color-grey);
   --title-text-color: var(--color-black);
   --accent-color: var(--color-blue);
@@ -15,6 +18,7 @@
   --footer-color: var(--color-transparent-grey);
   --background-color-footer: var(--color-light-black);
   --background-button-color: var(--color-light-grey);
+  --background-color-services: var(--color-almost-white);
   --second-font-family: Raleway, sans-serif;
 }
 
@@ -42,6 +46,8 @@ body {
 }
 
 .titles {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -56,6 +62,8 @@ body {
 /* .header { }*/
 
 .logo {
+  display: inline-block;
+
   color: var(--title-text-color);
   font-family: var(--second-font-family);
   font-weight: 700;
@@ -120,7 +128,7 @@ body {
   border-radius: 4px;
   min-width: 200px;
   padding: 10px 32px;
-  margin-bottom: ;
+  /* margin-bottom: ; */
 
   color: var(--main-white-color);
   background-color: var(--accent-color);
@@ -162,17 +170,37 @@ body {
 
 /*=== Наши услуги ===*/
 
-.services {
+.services .container {
+  background-color: var(--background-color-services);
   /* margin-top: 0;
   margin-bottom: 50px; */
-  padding-top: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*=== /Наши услуги ===*/
 
 /*=== Наша команда ===*/
 
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--color-light-grey);
+}
+
+.team-card {
+  background-color: var(--main-white-color);
+  border: 1px solid transparent;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-foto {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 .team-member {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -181,6 +209,8 @@ body {
 }
 
 .team-specialization {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--main-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -195,20 +225,39 @@ body {
   background-color: var(--background-color-footer);
 }
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo.logo-inverse {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--main-white-color);
 }
 
 .address {
+  margin-top: 0;
+  margin-bottom: 9px;
   color: var(--main-white-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
 
+.footer-connection {
+  margin-top: 0%;
+  margin-bottom: 9px;
+}
+
 /*=== /Подвал с контактами ===*/
 
 /*=== ПОРТФОЛИО === */
+
+.portfolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /*=== Фильтр ===*/
 
@@ -231,15 +280,34 @@ body {
 
 /*=== /Фильтр ===*/
 
+.portfolio-buttons {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 /*=== Проекты ===*/
 .projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
   list-style: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
 
-.projects-titles {
+.project-card {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.project-foto {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.project-titles {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -247,4 +315,8 @@ body {
   letter-spacing: 0.06em;
 }
 
+.project-category {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 /*=== /Проекты ===*/
