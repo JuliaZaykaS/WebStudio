@@ -34,7 +34,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid red;
@@ -61,10 +61,10 @@ body {
 
 /*=== Шапка страницы ===*/
 
-/* .header { }*/
-
 .logo {
   display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   color: var(--title-text-color);
   font-family: var(--second-font-family);
@@ -98,6 +98,47 @@ body {
   line-height: 1.71;
 }
 
+.header .list {
+  margin-bottom: 0;
+}
+/* .list.container {
+  margin-bottom: 0;
+} */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.nav-pages {
+  display: flex;
+  margin-left: 93px;
+  margin-top: 0;
+}
+
+.nav-pages .item + .item {
+  margin-left: 50px;
+}
+
+.nav-pages .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-connection {
+  display: flex;
+  margin-top: 0;
+}
+
+.header-connection .item + .item {
+  margin-left: 50px;
+}
+
 /*=== /Шапка страницы ===*/
 
 /*===Девиз===*/
@@ -115,7 +156,7 @@ body {
 
 .slogan-title {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   color: var(--main-white-color);
   font-weight: 900;
@@ -154,7 +195,26 @@ body {
   margin-bottom: 0;
 }
 
+.advantages-catalog {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.advantages-catalog .item {
+  /* width: calc((100% - 3 * 30) / 4); */
+  width: 270px;
+}
+
+.advantages-catalog .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .advantages-catalog .item + item {
+  margin-left: 30px;
+} */
+
 .advantages-title {
+  margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -164,8 +224,12 @@ body {
 }
 
 .advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.71;
+  text-align: left;
 }
 
 /*=== /Наши преимущества ===*/
