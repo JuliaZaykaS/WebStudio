@@ -19,36 +19,38 @@
   <body>
     <!--Шапка страницы-->
     <header class="header">
-      <nav class="container">
-        <a class="logo link" href="./index.html"
-          ><span class="logo-path">Web</span>Studio</a
-        >
-        <ul class="list">
-          <li>
-            <a class="link current" href="./index.html">Студия</a>
-          </li>
-          <li>
-            <a class="link" href="./portfolio.html" target="_blank"
-              >Портфолио</a
+      <div class="container navigation">
+        <nav class="site-nav">
+          <a class="logo link" href="./index.html"
+            ><span class="logo-path">Web</span>Studio</a
+          >
+          <ul class="list nav-pages">
+            <li class="item">
+              <a class="link current" href="./index.html">Студия</a>
+            </li>
+            <li class="item">
+              <a class="link" href="./portfolio.html" target="_blank"
+                >Портфолио</a
+              >
+            </li>
+            <li class="item">
+              <a class="link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list header-connection">
+          <li class="item">
+            <a class="connection link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="link" href="#">Контакты</a>
+          <li class="item">
+            <a class="connection link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="list container">
-        <li>
-          <a class="connection link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="connection link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!--Шапка страницы-->
 
@@ -59,15 +61,19 @@
       <section class="portfolio">
         <div class="container">
           <ul class="portfolio-buttons list">
-            <li><button type="button" class="filter-button">Все</button></li>
-            <li>
+            <li class="pf-button">
+              <button type="button" class="filter-button">Все</button>
+            </li>
+            <li class="pf-button">
               <button type="button" class="filter-button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="pf-button">
               <button type="button" class="filter-button">Приложения</button>
             </li>
-            <li><button type="button" class="filter-button">Дизайн</button></li>
-            <li>
+            <li class="pf-button">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="pf-button">
               <button type="button" class="filter-button">Маркетинг</button>
             </li>
           </ul>
