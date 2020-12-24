@@ -9,6 +9,8 @@
   --color-light-black: #2f303a;
   --color-light-grey: #f5f4fa;
   --color-almost-white: #e5e5e5;
+  --color-second-almost-white: #eeeeee;
+  --color-three-almost-white: #ececec;
 
   /* Переменные */
   --main-text-color: var(--color-grey);
@@ -19,6 +21,9 @@
   --background-color-footer: var(--color-light-black);
   --background-button-color: var(--color-light-grey);
   --background-color-services: var(--color-almost-white);
+  --card-border-color: var(--color-second-almost-white);
+  --section-border-color: var(--color-three-almost-white);
+
   --second-font-family: Raleway, sans-serif;
 }
 
@@ -306,8 +311,14 @@ body {
 .team-foto {
   display: block;
   margin-top: 0;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
+
+.member-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-member {
   margin-top: 0;
   margin-bottom: 10px;
@@ -320,7 +331,7 @@ body {
 
 .team-specialization {
   margin-top: 0;
-  margin-bottom: 0;
+  /* margin-bottom: 30px; */
   color: var(--main-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -363,10 +374,13 @@ body {
 /*=== /Подвал с контактами ===*/
 
 /*=== ПОРТФОЛИО === */
+.portfolio {
+  border-top: 1px solid var(--section-border-color);
+}
 
 .portfolio .container {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
 }
 
 /*=== Фильтр ===*/
@@ -375,7 +389,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   padding-left: 0;
 }
 
@@ -447,8 +461,20 @@ body {
 }
 
 .project-foto {
+  display: block;
   margin-top: 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.card-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-top: none;
+  border-left: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
+  border-right: 1px solid var(--card-border-color);
 }
 
 .project-titles {
