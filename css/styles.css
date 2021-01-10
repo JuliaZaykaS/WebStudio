@@ -250,81 +250,40 @@ body {
   display: flex;
 }
 
-/* .advantages-catalog */
 .advantage-item {
   width: 270px;
-  /* margin-bottom: 30px; */
 }
 
 .advantages-catalog .advantage-item:not(:last-child) {
   margin-right: 30px;
 }
 
-/* .advantage-item::before { */
-/* display: block;
-  content: "";
-  height: 120px; */
-/* outline: 1px solid blue; */
-/* display: block;
-  content: "";
-  height: 120px;
-  background-color: var(--background-button-color);
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; */
-
-/* background-color: #ccc; */
-/* } */
-
-/* .advantage-one::before {
-  background-image: url("../images/main/locator.svg"); */
-/* background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; */
-/* } */
-/* .advantage-item::before {
+.advantage-item::before {
   display: block;
   content: "";
-  width: 270px;
   height: 120px;
-  margin: 0;
   margin-bottom: 30px;
-  margin-right: 0;
 
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--background-button-color);
-  border-radius: 4px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  outline: 1px solid blue;
-} */
+}
 
-/* .advantages-catalog .item:nth-child(1) {
-  content: "";
-  width: 66px;
-  height: 70px;
-  background-image: url("../images/main/locator.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-} */
-/* .advantage-one::before {
-  display: block;
-  content: "";
-  width: 66px;
-  height: 70px;
-  margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 102px;
-  padding-left: 102px;
-  background-image: url("../images/Vector.png");
-  outline: 1px solid blue;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-} */
+.advantage-one::before {
+  background-image: url("../images/main/antenna.svg");
+}
+
+.advantage-two::before {
+  background-image: url("../images/main/clock.svg");
+}
+
+.advantage-three::before {
+  background-image: url("../images/main/diagram.svg");
+}
+
+.advantage-four::before {
+  background-image: url("../images/main/astronaut.svg");
+}
 
 .advantages-title {
   margin-bottom: 10px;
