@@ -153,14 +153,12 @@ body {
   display: inline-flex;
 } */
 
-.email::before {
+/* .email::before {
   display: inline-block;
-  /* align-items: center; */
   content: "";
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  /* outline: 1px solid blue; */
   background-image: url("../images/main/envelope.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -168,17 +166,17 @@ body {
 }
 .telephone::before {
   display: inline-block;
-  /* align-self: center; */
+
   content: "";
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  /* outline: 1px solid blue; */
+
   background-image: url("../images/main/smartphone.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 /*=== /Шапка страницы ===*/
 
 /*===Девиз===*/
@@ -258,7 +256,7 @@ body {
   margin-right: 30px;
 }
 
-.advantage-item::before {
+/* .advantage-item::before {
   display: block;
   content: "";
   height: 120px;
@@ -283,7 +281,7 @@ body {
 
 .advantage-four::before {
   background-image: url("../images/main/astronaut.svg");
-}
+} */
 
 .advantages-title {
   margin-bottom: 10px;
