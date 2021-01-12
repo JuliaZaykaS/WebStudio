@@ -5,12 +5,14 @@
   --color-black: #212121;
   --color-blue: #2196f3;
   --color-white: #ffffff;
+  --color-very-transparent-grey: rgba(255, 255, 255, 0.1);
   --color-transparent-grey: rgba(255, 255, 255, 0.6);
   --color-light-black: #2f303a;
   --color-light-grey: #f5f4fa;
   --color-almost-white: #eeeeee;
   --color-second-almost-white: #ececec;
   --color-dark-grey: rgba(47, 48, 58, 0.4);
+  --color-grey-two: #afb1b8;
 
   /* Переменные */
   --main-text-color: var(--color-grey);
@@ -23,6 +25,8 @@
   --card-border-color: var(--color-almost-white);
   --section-border-color: var(--color-second-almost-white);
   --background-gradient: var(--color-dark-grey);
+  --icon-color: var(--color-grey-two);
+  --icon-footer-background: var(--color-very-transparent-grey);
 
   --main-font-family: Roboto, sans-serif;
   --second-font-family: Raleway, sans-serif;
@@ -149,8 +153,13 @@ body {
   margin-right: 50px;
 }
 
+.header-connection .connection {
+  color: var(--main-text-color);
+}
+
 .email {
   margin-right: 10px;
+  fill: var(--main-text-color);
 }
 
 .email:hover {
@@ -159,6 +168,7 @@ body {
 
 .telephone {
   margin-right: 10px;
+  fill: var(--main-text-color);
 }
 
 .telephone:hover {
@@ -258,7 +268,7 @@ body {
 
 /*=== Наши преимущества ===*/
 
-.advantages.container {
+.advantages .container {
   padding-top: 94px;
   padding-bottom: 94px;
   color: var(--main-text-color);
@@ -273,8 +283,11 @@ body {
 }
 
 .advantage-icon-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
   height: 120px;
   background-color: var(--background-button-color);
   border-radius: 4px;
@@ -430,11 +443,66 @@ body {
   padding: 12px;
 }
 
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: var(--icon-color);
+}
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--main-white-color);
+  /* fill: currentColor; */
+}
+
 .member-social-links .member-links:not(:last-child) {
   margin-right: 10px;
 }
 
 /*=== /Наша команда ===*/
+.clients .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  /* padding: 20px 60px; */
+  /* text-align: center; */
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.regular-clients .client:not(:last-child) {
+  margin-right: 30px;
+}
+
+.brand-icon {
+  fill: var(--icon-color);
+}
+
+.brand-icon:hover,
+.brand-icon:focus {
+  fill: var(--accent-color);
+}
+
+/*=== Наши клиенты ===*/
+
+/*=== /Наши клиенты ===*/
 
 /*=== Подвал с контактами ===*/
 .footer {
@@ -442,8 +510,21 @@ body {
 }
 
 .footer .container {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-links {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.footer-contacts {
+  margin-right: 70px;
 }
 
 .logo.logo-inverse {
@@ -462,8 +543,25 @@ body {
 .footer-connection {
   margin-bottom: 9px;
 }
+.company-social-link .social-link {
+  background-color: var(--icon-footer-background);
+}
+.company-social-link .social-link:hover,
+.company-social-link .social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.company-social-link .social-icon {
+  fill: var(--main-white-color);
+}
+
+.join {
+  /* display: flex; */
+  /* justify-content: center; */
+}
 
 .title-inverse {
+  margin-bottom: 30px;
   color: var(--background-button-color);
 }
 
@@ -537,6 +635,12 @@ body {
 
 .project-card {
   margin-bottom: 30px;
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-foto {
