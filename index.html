@@ -65,11 +65,17 @@
       <section class="slogan">
         <div class="container">
           <h1 class="slogan-title">Эффективные решения для вашего бизнеса</h1>
-          <a class="button-primary link" href="#">Заказать услугу</a>
+          <a class="button-primary link" data-modal-open href="#"
+            >Заказать услугу</a
+          >
         </div>
       </section>
-      <div class="modal-backdrop">
-        <div class="modal-window"></div>
+      <div class="modal-backdrop" data-modal>
+        <div class="modal-window">
+          <button class="modal-button" data-modal-close>
+            <img src="./images/main/close-button.svg" alt="Закрыть" />
+          </button>
+        </div>
       </div>
       <!--/Девиз-->
 
@@ -510,5 +516,7 @@
       </div>
     </footer>
     <!--/Подвал с контактами-->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
