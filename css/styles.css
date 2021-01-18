@@ -278,6 +278,7 @@ body {
   border-radius: 50%;
   background: var(--main-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
 .is-hidden {
