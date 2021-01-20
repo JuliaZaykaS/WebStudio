@@ -30,6 +30,8 @@
 
   --main-font-family: Roboto, sans-serif;
   --second-font-family: Raleway, sans-serif;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Общие стили */
@@ -103,6 +105,8 @@ body {
 }
 
 .list .link {
+  transition: color 250ms var(--timing-function);
+
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -441,9 +445,14 @@ body {
   display: block;
   width: 44px;
   height: 44px;
+
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+
   border-radius: 50%;
   padding: 12px;
   color: var(--icon-color);
+  background-color: var(--main-white-color);
 }
 
 .social-link:hover,
@@ -479,6 +488,8 @@ body {
 
   border: 1px solid currentColor;
   border-radius: 4px;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .client-link:hover,
@@ -529,6 +540,7 @@ body {
 
 .company-social-link .social-link {
   background-color: var(--icon-footer-background);
+  transition: background-color 250ms var(--timing-function);
 }
 .company-social-link .social-link:hover,
 .company-social-link .social-link:focus {
@@ -576,6 +588,10 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .filter-button:hover,
@@ -606,6 +622,7 @@ body {
 .project-card {
   position: relative;
   margin-bottom: 30px;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .project-card:hover,
@@ -615,18 +632,55 @@ body {
 }
 
 .project-foto {
-  display: block;
+  position: relative;
+  /* display: block; */
+  /* width: 370px; */
+  overflow: hidden;
+  /* height: 294px; */
 }
 
-.project-card:hover::before {
+/* .project-card:hover::before {
   opacity: 1;
+} */
+
+.project-description {
+  position: absolute;
+  display: flex;
+
+  bottom: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+
+  /* Opacity анимируемое свойство, используйте вместо diplay none */
+  opacity: 0;
+  transition: opacity 250ms var(--timing-function);
 }
 
 .project-card:hover .project-description {
   opacity: 1;
 }
 
-.project-card::before {
+.project-overlay {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 250ms var(--timing-function),
+    opacity 250ms var(--timing-function);
+}
+
+.project-card:hover .project-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* .project-card::before {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -636,7 +690,7 @@ body {
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
-}
+} */
 
 .card-content {
   padding-top: 20px;
